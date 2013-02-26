@@ -34,7 +34,7 @@
 					cookieName: 'accordion_nav',
 					speed: 'slow',
 					animateOpen: function (elem, opts) { //replace the standard slideUp with custom function
-						elem.next().slideFadeToggle(opts.speed);
+                        elem.next().slideFadeToggle(opts.speed);                      
 					},
 					animateClose: function (elem, opts) { //replace the standard slideDown with custom function
 						elem.next().slideFadeToggle(opts.speed);
@@ -102,8 +102,8 @@
                           <div id="servicios">
                 			<div id="accordion">
                 				<!-- panel -->
-                				<h3 class="accordion accordion-close" id="body-section4">Dr. C&eacute;sar R. Holgu&iacute;n<span></span></h3>
-                				<div style="display: none;" class="container">
+                				<h3 class="accordion accordion-close">Dr. C&eacute;sar R. Holgu&iacute;n<span></span></h3>
+                				<div id="cesar_holguin" style="display: none;" class="container">
                 					<div class="content">
                                         <img class="img-equipo" src="images/foto_holguin.jpg"/>
                 						<p class="color-4 p1" style="font-size: 16px;"><b>International Tax Partner</b></p>
@@ -136,7 +136,7 @@
                 				</div>
                 				<!-- end panel -->
                 				<!-- panel -->
-                				<h3 class="accordion accordion-close" id="body-section2">Dr. Fausto Adanaqu&eacute; Eugenio<span></span></h3>
+                				<h3 id="fausto_adanaque" class="accordion accordion-close">Dr. Fausto Adanaqu&eacute; Eugenio<span></span></h3>
                 				<div style="display: none;" class="container">
                 					<div class="content">
                                         <img class="img-equipo" src="images/foto_holguin.jpg"/>
@@ -157,10 +157,11 @@
                 				</div>
                 				<!-- end panel -->
                 				<!-- panel -->
-                				<h3 class="accordion accordion-close" id="body-section3">Ing. Marco Maridue&ntilde;a<span></span></h3>
-                				<div style="display: none;" class="container">
+                				<h3 class="accordion accordion-close">Ing. Marco Maridue&ntilde;a<span></span></h3>
+                				<div  id="marco_mariduena" style="display: none;" class="container">
                 					<div class="content">
                                         <img class="img-equipo" src="images/foto_holguin.jpg"/>
+                                        <p class="color-4 p1" style="font-size: 16px;"><b>Tax &amp; General Manager</b></p>
                 						<p class="color-4 p1">
                                             <br />El Se&ntilde;or Maridue&ntilde;a realiz&oacute; sus estudios superiores en la Universidad de Guayaquil, graduado de Contador P&uacute;blico Autorizado CPA. Socio de Impuestos para nuestros clientes. Su experiencia es amplia en asesoramiento de impuestos. 
                                         </p>
@@ -172,8 +173,8 @@
                 				</div>
                 				<!-- end panel -->
                 				<!-- panel -->
-                				<h3 class="accordion accordion-close" id="body-section4">Ing. Danny F. Aguill&oacute;n<span></span></h3>
-                				<div style="display: none;" class="container">
+                				<h3 class="accordion accordion-close">Ing. Danny F. Aguill&oacute;n<span></span></h3>
+                				<div id="danny_aguillon" style="display: none;" class="container">
                 					<div class="content">
                                         <img class="img-equipo" src="images/foto_holguin.jpg"/>
                 						<p class="color-4 p1" style="font-size: 16px;"><b>Tax Partner</b></p>
@@ -193,8 +194,8 @@
                 				</div>
                 				<!-- end panel -->
                 				<!-- panel -->
-                				<h3 class="accordion accordion-close" id="body-section4">Ing. Edward F. Aguill&oacute;n<span></span></h3>
-                				<div style="display: none;" class="container">
+                				<h3 class="accordion accordion-close">Ing. Edward F. Aguill&oacute;n<span></span></h3>
+                				<div id="edward_aguillon" style="display: none;" class="container">
                 					<div class="content">
                                         <img class="img-equipo" src="images/foto_holguin.jpg"/>
                 						<p class="color-4 p1" style="font-size: 16px;"><b>Tax &amp; Legal Manager</b></p>
@@ -226,10 +227,16 @@
                         </ul>
                     </div>
                     <div class="gadget">
-                        <h2 class="star">Nuestro Equipo</h2>
+                        <h2 class="star">Servicios</h2>
                         <div class="clr"></div>
                         <ul class="sb_menu">
-                            <a href="#"><li>Marco Maridue&ntilde;a</li></a>
+                            <a href="servicios.html"><li>Consultor&iacute;a Tributaria</li></a>
+                            <a href="servicios.html"><li>Auditor&iacute;a Interna en Impuestos</li></a>
+                            <a href="servicios.html"><li>Servicios de Contabilidad</li></a>
+                            <a href="servicios.html"><li>Administraci&oacute;n de N&oacute;minas</li></a>
+                            <a href="servicios.html"><li>Patrocinio Legal Tributario</li></a>
+                            <a href="servicios.html"><li>Tr&aacute;mites Legales</li></a>
+                            <a href="servicios.html"><li>Reclamaci&oacute;n e Impugnaci&oacute;n</li></a>
                         </ul>
                     </div>
                 </div>
