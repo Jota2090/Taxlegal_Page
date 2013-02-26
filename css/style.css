@@ -42,8 +42,9 @@ h3 {
 }
 p {
 	margin:8px 0;
-	padding:0 0 8px 0;
+	padding:0 20px 5px 10px;
     font-size: 13px;
+    text-align: justify;
 }
 a {
 	color:#3447ff;
@@ -64,7 +65,7 @@ a {
     display: block;
     height: 120px;
     margin: 0 auto;
-    padding: 0;
+    padding-top: 20px;
     text-decoration: none;
     width: 700px;
 }
@@ -165,10 +166,12 @@ h1 a, h1 a:hover {
 	padding:40px 0 0;
 	float:left;
 }
-.content .mainbar img {
+.img-equipo {
+    float: left;
+    padding: 2px 15px;    
 }
 .content .mainbar img.fl {
-	margin:0;
+	margin:-5px 0 0 30px;
 }
 .content .mainbar .article {
 	padding:0 0 40px;
@@ -176,7 +179,7 @@ h1 a, h1 a:hover {
 }
 .content .mainbar .post_content {
 	float:right;
-    padding:50px 0 0;
+    padding:25px 0 0;
 	width:340px;
 }
 .content .mainbar .post_content strong {
@@ -357,26 +360,12 @@ p.infopost a {
 	width:274px;
 }
 .fbg .fbg_ul {
-	margin:0;
-	padding:0;
-	list-style:none;
+	margin-left:10px;
+    margin-right: 10px;
 }
 .fbg .fbg_ul li {
-	margin:0;
-	padding:0;
-	list-style:none;
-}
-.fbg .fbg_ul li a {
-	display:block;
-	margin:0;
-	padding:2px 0 2px 12px;
-	color:#6e6e6e;
-	text-decoration:none;
-	background:url(../images/li.gif) no-repeat left center;
-}
-.fbg .fbg_ul li a:hover {
-	color:#3447ff;
-	text-decoration:underline;
+    margin-left:10px;
+    margin-right: 10px;
 }
 .fbg p.contact_info {
 	line-height:1.8em;

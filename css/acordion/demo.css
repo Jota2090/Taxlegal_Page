@@ -56,6 +56,7 @@ div.content {
     padding:10px 35px;
 	font-size:13px;
 	line-height:1.5em;
+    text-align: justify;
 	font-family:"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 div.content ul, div.content p {
