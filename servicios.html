@@ -15,43 +15,53 @@
         <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/coin-slider.min.js"></script>
-
-        <script src="js/acordion/ga.js" async=""></script><script>(function(d){d.className=d.className.replace(/^no-js\b/,'js');}(document.documentElement));</script>
-        <link rel="canonical" href="http://www.paulrhayes.com/experiments/accordion/">
-        <link rel="stylesheet" href="css/acordionmaster.css">
-        <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/prhayes" title="Paul Hayes RSS">
-
-        <link rel="stylesheet" href="css/acordion/experiment.css">    
-        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-        <script src="js/acordion/fdb0guo.js"></script>
-        <style type="text/css">.swing{font-family:"swingdancer-1","swingdancer-2",cursive;}.caslon{font-family:"adobe-caslon-pro-1","adobe-caslon-pro-2",serif;}</style><link href="css/acordion/d.css" rel="stylesheet"><script>try{Typekit.load();}catch(e){}</script>
-    
-        <script src="js/servicios/accordionmenu.js" type="text/javascript"></script>
-        <script src="js/servicios/scripts.js" type="text/javascript"></script>
-    
-        <link href="css/servicios/tabcontent.css" rel="stylesheet" type="text/css">
-        <script src="js/servicios/tabcontent.js" type="text/javascript"></script>
-        <link href="css/servicios/accordionmenu.css" rel="stylesheet" type="text/css">
-        <style type="text/css">
-            #acdnmenuDemo img {margin-left:24px;}  
-            #acdnmenuDemo div.arrowImage
-            {
-                left:auto; right:8px;
-            }
-            #dm, #dm1 {height:360px;}  
         
-        </style>
-        <script type="text/javascript">
-            var amenuOptions2 =
-            {
-                menuId: "acdnmenuDemo", 
-                linkIdToMenuHtml: null,
-                expand: "multiple",
-                license: "2a8e9"
-            };
-            var amenuDemo = new McAcdnMenu(amenuOptions2);
-        </script>
         
+        <!-- INICIO: css y js de acordion servicios-->
+        <link rel="stylesheet" href="css/acordion/highlight.css" type="text/css">
+		<link rel="stylesheet" href="css/acordion/demo.css" type="text/css">
+		<script type="text/javascript" src="js/acordion/jquery_002.js"></script>
+		<script type="text/javascript" src="js/acordion/highlight.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				//syntax highlighter
+				hljs.tabReplace = '    ';
+				hljs.initHighlightingOnLoad();
+
+				//accordion
+				$('h3.accordion').accordion({
+					defaultOpen: 'section1',
+					cookieName: 'accordion_nav',
+					speed: 'slow',
+					animateOpen: function (elem, opts) { //replace the standard slideUp with custom function
+						elem.next().slideFadeToggle(opts.speed);
+					},
+					animateClose: function (elem, opts) { //replace the standard slideDown with custom function
+						elem.next().slideFadeToggle(opts.speed);
+					}
+				});
+	
+				$('h3.accordion2').accordion({
+					defaultOpen: 'sample-1',
+					cookieName: 'accordion2_nav',
+					speed: 'slow',
+					cssClose: 'accordion2-close', //class you want to assign to a closed accordion header
+					cssOpen: 'accordion2-open',
+					
+				});
+
+				//custom animation for open/close
+				$.fn.slideFadeToggle = function(speed, easing, callback) {
+					return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
+				};
+
+			});
+		</script>
+		<style type="text/css">
+			#acordion {width:660px}
+		</style>
+        <!-- FIN: css y js de acordion servicios-->
     </head>
     
     <body>
@@ -87,189 +97,156 @@
                     <div class="article">
                           <div class="clr"></div>
                           <h2>Servicios</h2>
-                          <p></p> 
-                          <!-- ************************** 
-                          <div id="experiment">
-                                <div class="accordion">
-                                     
-                                    <div id="consultoria_tributaria" class="section">
-                                        <h3>                  
-                                            <a href="#consultoria_tributaria">Consultor&iacute;a Tributaria</a>
-                                        </h3>                  
-                                        <div>                  
-                                            <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                        </div>                 
-                                    </div>                     
-                                    <div id="auditoria_interna_impuestos" class="section">
-                                        <h3>                   
-                                            <a href="#auditoria_interna_impuestos">Auditor&iacute;a Interna en Impuestos</a>
-                                        </h3>                  
-                                        <div>                  
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        </div>                 
-                                    </div>                     
-                                    <div id="servicios_contabilidad" class="section">
-                                        <h3>                   
-                                            <a href="#servicios_contabilidad">Servicios de Contabilidad</a>
-                                        </h3>                  
-                                        <div>                  
-                                            <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                        </div>                 
-                                    </div>                   
-                                    <div id="administracion_nominas" class="section">
-                                        <h3>                   
-                                            <a href="#administracion_nominas">Administraci&oacute;n de N&oacute;minas</a>
-                                        </h3>                  
-                                        <div>                  
-                                            <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                        </div>                 
-                                    </div>                     
-                                    <div id="patrocinio_legal_tributario" class="section">
-                                        <h3>                   
-                                            <a href="#patrocinio_legal_tributario">Patrocinio Legal Tributario</a>
-                                        </h3>                  
-                                        <div>                  
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        </div>                 
-                                    </div>                     
-                                    <div id="tramites_legales" class="section">
-                                        <h3>                   
-                                            <a href="#tramites_legales">Tr&aacute;mites Legales</a>
-                                        </h3>                  
-                                        <div>                  
-                                            <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                        </div>                 
-                                    </div>
-                                    <div id="reclamacion_impugnacion" class="section">
-                                        <h3>                   
-                                            <a href="#reclamacion_impugnacion">Reclamaci&oacute;n e Impugnaci&oacute;n</a>
-                                        </h3>                  
-                                        <div>                  
-                                            <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                        </div>      
-                                    </div>                         
-                                </div>
-                          </div>                                   
-                          <!-- ************************** -->
-                          <!-- END OF EXPERIMENT -->
-                          
-                          
-                          <nav id="acdnmenuDemo">
-                            <ul style="visibility: visible;" class="top">
-                                    <li>
-                            			<div class="heading">
-                            				<div class="arrowImage"></div>Consultor&iacute;a Tributaria
-                                        </div>
-                            			<ul style="height: 0px;" class="sub">
-                                            <li>
-                                                Tanto correctiva como preventiva, nuestro equipo de consultores tributarios est&aacute;n capacitados para ayudarle a Usted y  sus Compa&ntilde;&iacute;as con los siguientes servicios:
-                            				</li>
-                                            <div class="heading">
-                                                <div class="arrowImage"></div>Asistencia en Declaraci&oacute;n de Impuestos (IR, IVA, entre otros).
-                                            </div>    
-                                            <div class="heading">
-            									<div class="arrowImage"></div>Evaluaci&oacute;n de Contingencias Fiscales (Sustentaci&oacute;n de Gastos No deducibles de ser posible).
-                                            </div>    
-                                            <div class="heading">
-            									<div class="arrowImage"></div>Impugnaci&oacute;n de Valores a Pagar.
-                                            </div>    
-                                            <div class="heading">
-                                                <div class="arrowImage"></div>Asistencia en Requerimiento de Informaci&oacute;n del SRI.
-            								</div>    
-                                            <div class="heading">
-                                            	<div class="arrowImage"></div>Elaboraci&oacute;n y/o Supervisi&oacute;n de Anexos de IVA (Anexo Transaccional) y Retenci&oacute;n.
-                                            </div>    
-                                            <div class="heading" style="padding-bottom: 20px;">    
-            									<div class="arrowImage"></div>Cumplimiento tributario personal y corporativo.  
-                                            </div>
-                                        </ul>
-                            		</li>
-                                    <li style="height: 0px; overflow: hidden;" class="separator"></li>
-                            		<li>
-                            			<div class="heading">
-                            				<div class="arrowImage"></div>Auditor&iacute;a Interna en Impuestos
-                                        </div>
-                            			<ul style="height: 0px;" class="sub">
-                                            <li>
-                            					<a style="display: block;">contenido 2222</a>
-                            				</li>
-                                        </ul>
-                            		</li>
-                                    <li style="height: 0px; overflow: hidden;" class="separator"></li>
-                            		<li>
-                            			<div class="heading">
-                            				<div class="arrowImage"></div>Servicios de Contabilidad
-                                        </div>
-                            			<ul style="height: 0px;" class="sub">
-                                            <li>
-                            					<a style="display: block;">contenido 3333</a>
-                            				</li>
-                                        </ul>
-                            		</li>
-                            		<li style="height: 0px; overflow: hidden;" class="separator"></li>
-                            		<li>
-                            			<div class="heading">
-                            				<div class="arrowImage"></div>Administraci&oacute;n de N&oacute;minas
-                                        </div>
-                            			<ul style="height: 0px;" class="sub">
-                                            <li>
-                            					<a style="display: block;">contenido 4444</a>
-                            				</li>
-                                        </ul>
-                            		</li>
-                                    <li style="height: 0px; overflow: hidden;" class="separator"></li>
-                            		<li>
-                            			<div class="heading">
-                            				<div class="arrowImage"></div>Patrocinio Legal Tributario
-                                        </div>
-                            			<ul style="height: 0px;" class="sub">
-                                            <li>
-                            					<a style="display: block;">contenido 5555</a>
-                            				</li>
-                                        </ul>
-                            		</li>
-                                    <li style="height: 0px; overflow: hidden;" class="separator"></li>
-                            		<li>
-                            			<div class="heading">
-                            				<div class="arrowImage"></div>Tr&aacute;mites Legales
-                                        </div>
-                            			<ul style="height: 0px;" class="sub">
-                                            <li>
-                            					<a style="display: block;">contenido 6666</a>
-                            				</li>
-                                        </ul>
-                            		</li>
-                            		<li style="height: 0px; overflow: hidden;" class="separator"></li>
-                            		<li>
-                            			<div class="heading">
-                            				<div class="arrowImage"></div>Reclamaci&oacute;n e Impugnaci&oacute;n
-                                        </div>
-                            			<ul style="height: 0px;" class="sub">
-                                            <li>
-                            					<a style="display: block;">contenido 7777</a>
-                            				</li>
-                                        </ul>
-                            		</li>
-                                </ul>
-                            </nav>         
-                          <!-- ************************** -->
+                          <!-- ********************************* -->
+                          <!-- ****Inicio Acordion Servicios**** -->
+                          <!-- ********************************* -->
+                          <div id="servicios">
+			<div id="accordion">
+				<!-- panel -->
+				<h3 class="accordion accordion-close" id="body-section4">Consultor&iacute;a Tributaria<span></span></h3>
+				<div style="display: none;" class="container">
+					<div class="content">
+						<p>Tanto correctiva como preventiva, nuestro equipo de consultores tributarios est&aacute;n capacitados para ayudarle a Usted y  sus Compa&ntilde;&iacute;as con los siguientes servicios:</p>
+						<ul>
+							<li>Asistencia en Declaraci&oacute;n de Impuestos (IR, IVA, entre otros).</li>
+							<li>Asistencia en Declaraci&oacute;n de Impuestos (IR, IVA, entre otros).</li>
+							<li>Asistencia en Declaraci&oacute;n de Impuestos (IR, IVA, entre otros).</li>
+                        </ul>
+					</div>
+				</div>
+				<!-- end panel -->
+				<!-- panel -->
+				<h3 class="accordion accordion-close" id="body-section2">Add HTML<span></span></h3>
+				<div style="display: none;" class="container">
+					<div class="content">
+						<p>
+							You have to create your own html for the accordion. You need a header element
+							(here as h3, can be div or etc) that gets the "accordion" class assigned and a
+							body element. However, the slide effect will be choppy if you have margins and
+							padding for the container, so here I just use a div. I've used
+							"accordion" but you can choose any other selector, also i have added classes to
+							aid with styling, and the containers do not have to have these class
+							names. Note that there is a slight jump on some panels due to the way jQuery handles
+							slideUp and slideDown, see the custom javascript panel below for better sliding.
+							Here is an example:
+						</p>
+					</div>
+				</div>
+				<!-- end panel -->
+				<!-- panel -->
+				<h3 class="accordion accordion-close" id="body-section3">Add the Javascript<span></span></h3>
+				<div style="display: none;" class="container">
+					<div class="content">
+						<p>
+							JavaScript which belongs in the head of the html document, using the
+							cookie plugin is optional.	Please note that our default open / config is only
+							an example.
+						</p>
+						
+					</div>
+				</div>
+				<!-- end panel -->
+				<!-- panel -->
+				<h3 class="accordion accordion-close" id="body-section4">Default Options<span></span></h3>
+				<div style="display: none;" class="container">
+					<div class="content">
+						<p>The plugin default options are as follows:</p>
+						<h3>Details</h3>
+						<ul>
+							<li>cssClose - class assigned when closed</li>
+							<li>cssOpen - class assigned when opened</li>
+							<li>cookieName - cookie name for persisting panels</li>
+							<li>cookieOptions - see jquery.cookie plugin for more info</li>
+							<li>defaultOpen - id that you want opened by default</li>
+							<li>speed - animation speed</li>
+							<li>bind - event that triggers the collapsible, only
+								4 are supported:<br> click, dblclick, mouseenter, and mouseover</li>
+							<li>animateOpen - custom callback to animate opening</li>
+							<li>animateClose - custom callback to animate closing</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end panel -->
+				<!-- panel -->
+				<h3 class="accordion accordion-close" id="body-section4">Default Options<span></span></h3>
+				<div style="display: none;" class="container">
+					<div class="content">
+						<p>The plugin default options are as follows:</p>
+						<h3>Details</h3>
+						<ul>
+							<li>cssClose - class assigned when closed</li>
+							<li>cssOpen - class assigned when opened</li>
+							<li>cookieName - cookie name for persisting panels</li>
+							<li>cookieOptions - see jquery.cookie plugin for more info</li>
+							<li>defaultOpen - id that you want opened by default</li>
+							<li>speed - animation speed</li>
+							<li>bind - event that triggers the collapsible, only
+								4 are supported:<br> click, dblclick, mouseenter, and mouseover</li>
+							<li>animateOpen - custom callback to animate opening</li>
+							<li>animateClose - custom callback to animate closing</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end panel -->
+				<!-- panel -->
+				<h3 class="accordion accordion-close" id="body-section4">Default Options<span></span></h3>
+				<div style="display: none;" class="container">
+					<div class="content">
+						<p>The plugin default options are as follows:</p>
+						<ul>
+							<li>cssClose - class assigned when closed</li>
+							<li>cssOpen - class assigned when opened</li>
+							<li>cookieName - cookie name for persisting panels</li>
+							<li>cookieOptions - see jquery.cookie plugin for more info</li>
+							<li>defaultOpen - id that you want opened by default</li>
+							<li>speed - animation speed</li>
+							<li>bind - event that triggers the collapsible, only
+								4 are supported:<br> click, dblclick, mouseenter, and mouseover</li>
+							<li>animateOpen - custom callback to animate opening</li>
+							<li>animateClose - custom callback to animate closing</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end panel -->
+				<!-- panel -->
+				<h3 class="accordion accordion-close" id="body-section4">Default Options<span></span></h3>
+				<div style="display: none;" class="container">
+					<div class="content">
+						<p>The plugin default options are as follows:</p>
+						<h3>Details</h3>
+						<ul>
+							<li>cssClose - class assigned when closed</li>
+							<li>cssOpen - class assigned when opened</li>
+							<li>cookieName - cookie name for persisting panels</li>
+							<li>cookieOptions - see jquery.cookie plugin for more info</li>
+							<li>defaultOpen - id that you want opened by default</li>
+							<li>speed - animation speed</li>
+							<li>bind - event that triggers the collapsible, only
+								4 are supported:<br> click, dblclick, mouseenter, and mouseover</li>
+							<li>animateOpen - custom callback to animate opening</li>
+							<li>animateClose - custom callback to animate closing</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end panel -->
+				<!-- panel -->
+			</div>
+		</div>
+                          <!-- *****Fin Acordion Servicios****** -->
                     </div>
                 </div>
                 <div class="sidebar">
                     <div class="gadget">
-                        <h2 class="star">Experiencia</h2>
-                        <div class="clr"></div>
-                        <ul class="sb_menu">
-                            <li style="color: black;"><p>Taxlegal Ecuador S.A. es una organizaci&oacute;n conformada por profesionales de excelencia, prestigiosos y capaces de asesorar su empresa de la mejor manera.
-                                                        </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="gadget">
                         <h2 class="star">Nuestro Equipo</h2>
                         <div class="clr"></div>
                         <ul class="sb_menu">
-                            <a href="#"><li>Marco Maridue&ntilde;a</li></a>
+                            <a href="#"><li>Consultor&iacute;a Tributaria</li></a>
+                            <a href="#"><li>Auditor&iacute;a Interna en Impuestos</li></a>
+                            <a href="#"><li>Servicios de Contabilidad</li></a>
+                            <a href="#"><li>Administraci&oacute;n de N&oacute;minas</li></a>
+                            <a href="#"><li>Patrocinio Legal Tributario</li></a>
+                            <a href="#"><li>Tr&aacute;mites Legales</li></a>
+                            <a href="#"><li>Reclamaci&oacute;n e Impugnaci&oacute;n</li></a>
                         </ul>
                     </div>
                 </div>
@@ -280,15 +257,15 @@
             <div class="fbg_resize">
                 <div class="col c1">
                     <h3>&iquest; Qui&eacute;nes Somos ?</h3>
-                    <p>Somos una empresa dedicada a la consultar&iacute;a tributaria, reclamos administrativos, impugnaciones ante el SRI, elaboraci&oacute;n de estructuras tributarias, manejo de n&oacute;minas confidenciales, verificando el adecuado cumplimiento fiscal, convirti&eacute;ndonos en un verdadero asesor de negocios.</p>
+                    <p>Curabitur sed urna id nunc pulvinar semper. Nunc sit amet tortor sit amet lacus sagittis posuere cursus vitae nunc.Etiam venenatis, turpis at eleifend porta, nisl nulla bibendum justo.</p>
                 </div>
                 <div class="col c2">
                     <h3>&iquest; Por Qu&eacute; Nosotros ?</h3>
+                    <p>Curabitur sed urna id nunc pulvinar semper. Nunc sit amet tortor sit amet lacus sagittis posuere cursus vitae nunc.Etiam venenatis, turpis at eleifend porta, nisl nulla bibendum justo.</p>
                     <ul class="fbg_ul">
-                        <li><p>Enfoque metodol&oacute;gico derivado de las mejores pr&aacute;cticas mundiales.</p></li>
-                        <li><p>Grupo consultor de gran experiencia en actividades de l&iacute;nea.</p></li>
-                        <li><p>Permanentemente actualizaci&oacute;n en temas t&eacute;cnicos y empresariales..</p></li>
-                        <li><p>Herramientas de an&aacute;lisis del negocio de nuestros clientes.</p></li>
+                        <li><a href="#">Lorem ipsum dolor labore et dolore.</a></li>
+                        <li><a href="#">Excepteur officia deserunt.</a></li>
+                        <li><a href="#">Integer tellus ipsum tempor sed.</a></li>
                     </ul>
                 </div>
                 <div class="col c3">
@@ -304,7 +281,7 @@
                                             Edificio PREVISORA 
                                             <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            Piso 25 Oficina 2502 <br />
+                                            Piso 25 oficina 2502 <br />
                     <span>Lugar:</span>Guayaquil - Ecuador<br />
                     <span>Telefax:</span> (593-4) 2309020<br /> </p>
                 </div>
