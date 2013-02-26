@@ -65,7 +65,7 @@ div.content ul, div.content p {
 	padding:3px;
 }
 div.content ul li {
-	list-style-position:inside;
+    list-style-position:outside;
 	line-height:25px;
 }
 div.content ul li a {
@@ -73,4 +73,8 @@ div.content ul li a {
 }
 code {
 	overflow:auto;
+}
+.item_texto{
+    margin: 0 0 0 20px;
+    padding: 0 0 10px 10px;
 }
