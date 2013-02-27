@@ -45,10 +45,12 @@ p {
 	padding:0 20px 5px 10px;
     font-size: 13px;
     text-align: justify;
+    font:14px/1.5em "Liberation sans",Arial,Helvetica,sans-serif;        
 }
 a {
 	color:#3447ff;
 	text-decoration:underline;
+    border-radius: 18px 18px 18px 18px;    
 }
 .header, .content, .menu_nav, .fbg, .footer, form, ol, ol li, ul, .content .mainbar, .content .sidebar {
 	margin:0;
@@ -168,10 +170,10 @@ h1 a, h1 a:hover {
 }
 .img-equipo {
     float: left;
-    padding: 2px 15px;    
+    padding: 2px 20px 5px 30px;
 }
 .content .mainbar img.fl {
-	margin:-5px 0 0 30px;
+	margin:-5px 0 0 20px;
 }
 .content .mainbar .article {
 	padding:0 0 40px;
@@ -192,7 +194,7 @@ h1 a, h1 a:hover {
 }
 .content .sidebar .gadget {
 	margin:0 0 12px;
-	padding:12px 20px 24px 0;
+	padding:12px 10px 24px 0;
     
 }
 .content .sidebar h2 {
@@ -360,8 +362,8 @@ p.infopost a {
 	width:274px;
 }
 .fbg .fbg_ul {
-	margin-left:10px;
-    margin-right: 10px;
+	margin-left:0px;
+    margin-right: 0px;
 }
 .fbg .fbg_ul li {
     margin-left:10px;
