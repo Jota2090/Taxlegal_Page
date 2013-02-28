@@ -157,6 +157,7 @@
                                             <br /><a style="margin-left: 47px;" href="mailto:cholguin@lawnetworker.com">cholguin@lawnetworker.com</a>
                                             <br />Website: <a href="http://www.lawnetworker.com" target="_blank">www.lawnetworker.com</a>
                                         </p>
+                                        <p style="margin-top: 30px;"></p>
                 					</div>
                 				</div>
                 			</div>
@@ -179,6 +180,7 @@
                                         <p class="acordion_p">
                                             <br />Catedr&aacute;tico en la Universidad Estatal de Guayaquil por 18 a&ntilde;os, dando materias como Contabilidad y Legislaci&oacute;n y pr&aacute;ctica tributaria.
                                         </p>
+                                        <p style="margin-top: 30px;"></p>
                 					</div>
                 				</div>
                 			</div>
@@ -195,6 +197,7 @@
                                         <p class="acordion_p">
                                             <br />Ha prestado sus servicios para la firma Internacional Ernst & Young. Ha trabajado para compa&ntilde;&iacute;as comerciales, de servicios, industriales y fundaciones. Cuenta con estudios de tributaci&oacute;n internacional
                                         </p>
+                                        <p style="margin-top: 30px;"></p>
                 					</div>
                 				</div>
                 			</div>
@@ -217,6 +220,7 @@
                                         <p class="acordion_p">
                                             <br />Ha trabajado para compa&ntilde;&iacute;as comerciales, de servicios, industriales y fundaciones. Cuenta con estudios de tributaci&oacute;n internacional en pa&iacute;ses como Argentina, Chile y Colombia.
                                         </p>
+                                        <p style="margin-top: 30px;"></p>
                 					</div>
                 				</div>
                 			</div>
@@ -236,6 +240,7 @@
                                         <p class="acordion_p">
                                             <br />Adquiri&oacute; entrenamiento t&eacute;cnico en &aacute;reas tales como: Actualizaci&oacute;n Tributaria, Auditor&iacute;a Impositiva, Reclamos Tributarios, Planificaci&oacute;n Tributaria.
                                         </p>
+                                        <p style="margin-top: 30px;"></p>
                 					</div>
                 				</div>
                 			</div>                                                        

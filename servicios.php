@@ -108,6 +108,7 @@
                           <!-- ********************************* -->
                             <div class="acordion_header" id="consultoria" onclick="consultoria();">Consultor&iacute;a Tributaria<div class="down" ></div></div>
                 			<div id="cons-wrapper" class="wrapper">
+                                            <p style="margin-top: 15px;"></p>
                 				<figure class="img-indent5">
                 					<img src="images/cons-tributaria.png" alt="" />
                 				</figure>
@@ -117,9 +118,11 @@
                                         <p class="acordion_p">Nuestra asistencia profesional consistir&aacute; en la absoluci&oacute;n de consultas tributarias, laborales y legales relacionadas con las operaciones de su empresa y contar&aacute;n en cualquier momento con nuestros servicios profesionales para atender sus requerimientos, atendidos por los socios de la firma y sus respectivos asociados. As&iacute; mismo, informaremos a los ejecutivos de la Compa&ntilde;&iacute;a respecto de los cambios  tributarios, laborales y societarios que fuesen emitidos por los organismos competentes.</p>
                 					</div>
                 				</div>
+                                            <p style="margin-top: 30px;"></p>
                 			</div>
                 			<div class="acordion_header" id="anexos_cumplimiento" onclick="anexos_cumplimiento();">Anexos de Cumplimiento Tributario (ICT)<div class="down" ></div></div>
                 			<div id="anex-wrapper" class="wrapper">
+                                            <p style="margin-top: 15px;"></p>
                 				<figure class="img-indent5">
                 					<img src="images/aud-tributaria.png" alt="" />
                 				</figure>
@@ -128,9 +131,11 @@
                 						<p class="acordion_p">Revisaremos los Anexos de Cumplimiento Tributario por el ejercicio fiscal del 2011 con el prop&oacute;sito de asegurarnos de la presentaci&oacute;n adecuada que elimine cualquier potencial riesgo de alg&uacute;n requerimiento de informaci&oacute;n. De igual forma, proporcionaremos a ustedes con antelaci&oacute;n los borradores de los Anexos preparado por nosotros para vuestra aprobaci&oacute;n.</p>
                 					</div>
                 				</div>
+                                            <p style="margin-top: 30px;"></p>
                 			</div>
                 			<div class="acordion_header" id="asesoria_tributaria" onclick="asesoria_tributaria();">Asesor&iacute;a Tributaria Mensual<div class="down" ></div></div>
                 			<div id="ases-wrapper" class="wrapper">
+                                            <p style="margin-top: 15px;"></p>
                 				<figure class="img-indent5">
                 					<img src="images/serv-cont.png" alt="" />
                 				</figure>
@@ -151,9 +156,11 @@
                 						</ul>
                 					</div>
                 				</div>
+                                            <p style="margin-top: 30px;"></p>
                 			</div>
                 			<div class="acordion_header" id="capacitacion" onclick="capacitacion();">Capacitaci&oacute;n<div class="down" ></div></div>
                 			<div id="capa-wrapper" class="wrapper">
+                                            <p style="margin-top: 15px;"></p>
                 				<figure class="img-indent5">
                 					<img src="images/out-nom.png" alt="" />
                 				</figure>
@@ -163,6 +170,7 @@
                                         <p class="acordion_p">Esta charla no tendr&aacute; costo alguno de honorarios, solo se solicitar&aacute; el reembolso de los gastos incurridos en la ejecuci&oacute;n del trabajo antes propuesto.</p>
                 					</div>
                 				</div>
+                                            <p style="margin-top: 30px;"></p>
                 			</div>
                           <!-- *****Fin Acordion Servicios****** -->
                     </div>
