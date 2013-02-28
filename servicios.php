@@ -75,13 +75,13 @@
                 <div class="header_resize" style="width:1000px">
                     <div class="menu_nav">
                         <ul>
-                            <li><a href="index.html"><span>Inicio</span></a></li>
-                            <li><a href="quienes_somos.html"><span>Quienes Somos</span></a></li>
-                            <li><a href="equipo.php"><span>Equipo</span></a></li>
-                            <li><a href="recursos_internacionales.html"><span>Recursos Internacionales</span></a></li>
-                            <li class="active"><a href="servicios.php"><span>Servicios</span></a></li>
-                            <li><a href="clientes.html"><span>Clientes</span></a></li>
-                            <li><a href="contactenos.html"><span>Cont&aacute;ctenos</span></a></li>
+                            <li><a href="index.html" style="border-radius: 18px 18px 18px 18px;"><span>Inicio</span></a></li>
+                            <li><a href="quienes_somos.html" style="border-radius: 18px 18px 18px 18px;"><span>Quienes Somos</span></a></li>
+                            <li><a href="equipo.php" style="border-radius: 18px 18px 18px 18px;"><span>Equipo</span></a></li>
+                            <li><a href="recursos_internacionales.html" style="border-radius: 18px 18px 18px 18px;"><span>Recursos Internacionales</span></a></li>
+                            <li class="active"><a href="#" style="border-radius: 18px 18px 18px 18px;"><span>Servicios</span></a></li>
+                            <li><a href="clientes.html" style="border-radius: 18px 18px 18px 18px;"><span>Clientes</span></a></li>
+                            <li><a href="contactenos.html" style="border-radius: 18px 18px 18px 18px;"><span>Cont&aacute;ctenos</span></a></li>
                         </ul>
                     </div>
                 </div>
